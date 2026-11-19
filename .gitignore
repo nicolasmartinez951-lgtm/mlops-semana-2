@@ -1,0 +1,30 @@
+# Archivos temporales de Python.
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales.
+.venv/
+venv/
+env/
+
+# Archivos de Jupyter.
+.ipynb_checkpoints/
+
+# Configuración del editor.
+.vscode/
+
+# Archivos del sistema operativo.
+.DS_Store
+Thumbs.db
+
+# Bases de datos y seguimiento local de MLflow.
+*.db
+*.sqlite
+*.sqlite3
+
+# Modelos generados durante el entrenamiento.
+models/*.pkl
+
+# Registros y archivos temporales.
+*.log

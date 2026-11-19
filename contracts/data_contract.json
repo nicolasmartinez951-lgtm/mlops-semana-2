@@ -1,0 +1,55 @@
+{
+    "contract_name": "Iris Data Contract",
+    "version": "1.0.0",
+    "description": "Contrato de calidad de datos para el conjunto Iris utilizado en el entrenamiento y validación del modelo de clasificación.",
+
+    "features": {
+        "sepal length (cm)": {
+            "type": "number",
+            "nullable": false,
+            "minimum": 4.3,
+            "maximum": 7.9
+        },
+        "sepal width (cm)": {
+            "type": "number",
+            "nullable": false,
+            "minimum": 2.0,
+            "maximum": 4.4
+        },
+        "petal length (cm)": {
+            "type": "number",
+            "nullable": false,
+            "minimum": 1.0,
+            "maximum": 6.9
+        },
+        "petal width (cm)": {
+            "type": "number",
+            "nullable": false,
+            "minimum": 0.1,
+            "maximum": 2.5
+        }
+    },
+
+    "target": {
+        "name": "species",
+        "type": "integer",
+        "nullable": false,
+        "allowed_values": [0, 1, 2]
+    },
+
+    "valid_example": {
+        "sepal length (cm)": 5.1,
+        "sepal width (cm)": 3.5,
+        "petal length (cm)": 1.4,
+        "petal width (cm)": 0.2,
+        "species": 0
+    },
+
+    "invalid_example": {
+        "sepal length (cm)": 5.1,
+        "sepal width (cm)": null,
+        "petal length (cm)": 1.4,
+        "petal width (cm)": 8.0,
+        "species": 5
+    }
+}
